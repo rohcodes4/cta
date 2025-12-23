@@ -1,0 +1,20 @@
+name: Deploy Vite React to Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # Manual trigger option
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist  # Vite outputs to dist folder
+    - uses: actions/deploy-pages@v4
