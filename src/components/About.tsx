@@ -73,7 +73,7 @@ const About = () => {
                   transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
                 >
                   <img src={agPhoto} alt="AG - Co-Founder of calltoactions" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" /> */}
                 </motion.div>
                 {/* AG's badge */}
                 <motion.div initial={{
@@ -146,7 +146,7 @@ const About = () => {
                       alt="Rohit - Co-Founder of calltoactions" 
                       className="w-full h-full object-cover object-top"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" /> */}
                   </motion.div>
                   {/* Rohit's badge */}
                   <motion.div 
