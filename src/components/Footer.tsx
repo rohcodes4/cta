@@ -59,9 +59,9 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4">Get in Touch</h4>
             <div className="space-y-3">
-              <a href="mailto:hello@calltoactions.dev" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="mailto:hello@calltoactions.live" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
                 <Mail size={14} />
-                hello@calltoactions.dev
+                hello@calltoactions.live
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" />
